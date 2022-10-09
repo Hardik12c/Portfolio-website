@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Lato:wght@300&family=Montserrat:wght@200&family=Open+Sans&family=Roboto:wght@300&family=Slabo+13px&family=Source+Code+Pro:wght@300&family=Ubuntu:wght@400;500&family=Varela+Round&display=swap');
+/* aboutme section */
+.aboutme{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: 40px auto;
+}
+.aboutme img{
+    height: 195px;
+    aspect-ratio: 1/1;
+    border-radius: 180px;
+    margin: 25px;
+}
+.aboutme .about{
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+    color: #666665;
+    font-size: 18px;
+}
+/* moreaboutme section */
+
+.moreaboutme{
+    margin: 40px auto;
+    width: 90%;
+}
+.moreaboutme h1{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.moreaboutme #border{
+    border-bottom: 2px solid gray;
+    width: 75px;
+    margin: 40px auto;
+}
+.moreaboutme .boxescontainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.moreaboutme .boxescontainer .aboutbox{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.moreaboutme .boxescontainer .aboutbox .imageaboutbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+.moreaboutme .boxescontainer .aboutbox .imageaboutbox img{
+    aspect-ratio: 1/1;
+    height: 200px;
+    border-radius: 100px;
+}
+.moreaboutme .boxescontainer .aboutbox .first{
+    text-align: center;
+    margin: 12px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.moreaboutme .boxescontainer .aboutbox .second{
+    text-align: center;
+    margin: 12px;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: bold;
+    color: #717171;
+}
+
+@media screen and (max-width: 800px) {
+    .aboutme{
+        flex-direction: column;
+    }
+    .moreaboutme .boxescontainer{
+        flex-direction: column;
+    }
+}

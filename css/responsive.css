@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Lato:wght@300&family=Montserrat:wght@200&family=Open+Sans&family=Roboto:wght@300&family=Slabo+13px&family=Source+Code+Pro:wght@300&family=Ubuntu:wght@400;500&family=Varela+Round&display=swap');
+@media screen and (max-width:700px) {
+    /* hamburger responsive design */
+    .hamburger{
+        display: block;
+    }
+    .hamburger .line{
+        background-color: white;
+    }
+    .hamburger .hamcolor{
+        background-color: black;
+    }
+    /* navbar responsive */
+    nav {
+        height: 100vh;
+        float: left;
+        background-color: rgb(45, 45, 45,0.95);
+        position: fixed;
+    }
+    .w-set{
+        width: 0%;
+    }
+    .opacity-set{
+        opacity: 0;
+    }
+    nav .name {
+        display: none;
+    }
+
+    nav ul {
+        float: left;
+        top: 30px;
+        left: 0;
+        flex-direction: column;
+    }
+    nav ul li{
+        margin: 2rem;
+    }
+    nav ul li a{
+        font-size: 90%;
+        color: white;
+    }
+    .hover:hover{
+        border-bottom: 2px solid white;
+    }
+    /* personalinfo responsive */
+    .maincontainer .personalinfo{
+        width: 90vw;
+    }
+    /* maincontainer image responsive */
+    .maincontainer .personalinfo img{
+        height: 170px;
+    }
+    /* contact responsive */
+    .contact .box .contactbox{
+        width: 40vw;
+    }
+}
+@media screen and (max-width:500px) {
+    .maincontainer .personalinfo{
+        flex-direction: column-reverse;
+        height: 63vh;
+        width: 100vw;
+    }
+    .maincontainer .personalinfo .info .hello{
+        text-align: center;
+    }
+    .maincontainer .personalinfo .info .name{
+        text-align: center;
+    }
+    .maincontainer .personalinfo .info .skills{
+        text-align: center;
+        margin: 10px;
+        font-size: 1rem;
+        font-family: 'Slabo 13px', serif;
+    }
+    /* contact responsive */
+    .contact .box .contactbox{
+        width: 60vw;
+    }
+    .contact .box .contactbox #mail{
+        font-size: 12px;
+    }
+    /* footer design */
+    #footer span{
+        text-align: center;
+    }
+}
